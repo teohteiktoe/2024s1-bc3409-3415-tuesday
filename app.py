@@ -33,5 +33,9 @@ def SAR():
     r = TextBlob(q).sentiment
     return(render_template("SAR.html",r=r))
 
+@app.route("/TM",methods=["GET","POST"])
+def TM():
+    return(render_template("TM.html"))
+
 if __name__ == "__main__":
     app.run()
